@@ -125,11 +125,28 @@
                 <label for="tel" class="form-label">tel :</label>
                 <input type="number" class="form-control" id="tel" name="tel" required>
               </div>
-              <div class="col-md-12 invisible">
-                <label for="totalToSend" class="form-label">Articoli dell'ordine :</label>
-                <input type="text" class="form-control" id="totalToSend" name="totalToSend" required>
-                <label for="listItemToSend" class="form-label">Articoli dell'ordine :</label>
-                <textarea class="form-control" id="listItemToSend" name="listItemToSend" required></textarea>
+              <div class="row mt-5 flex-column flex-sm-row">
+                <h4 class="mb-3">Pagamento:</h4>
+                <div class="col">
+                  <label for="contanti">Contanti </label>
+                  <input type="radio" id="contanti" name="pagamento" value="contanti">
+                </div>
+                <div class="col">
+                  <label for="paypal">Paypal </label>
+                  <input type="radio" id="paypal" name="pagamento" value="paypal">
+                </div>
+                <div class="col">
+                  <label for="paypal">Bonifico </label>
+                  <input type="radio" id="bonifico" name="pagamento" value="paypal">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 invisible">
+                  <label for="totalToSend" class="form-label">Articoli dell'ordine :</label>
+                  <input type="text" class="form-control" id="totalToSend" name="totalToSend" required>
+                  <label for="listItemToSend" class="form-label">Articoli dell'ordine :</label>
+                  <textarea class="form-control" id="listItemToSend" name="listItemToSend" required></textarea>
+                </div>
               </div>
             </div>
             <div class="text-center">
